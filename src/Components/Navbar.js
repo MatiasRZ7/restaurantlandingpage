@@ -5,7 +5,6 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -15,7 +14,6 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-import { Phone } from '@mui/icons-material';
 import { Link as ScrollLink } from 'react-scroll';
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -52,7 +50,7 @@ const Navbar = () => {
       <ScrollLink to="about" smooth={true}>About</ScrollLink>
       <ScrollLink to="testimonials" smooth={true}>Testimonial</ScrollLink>
       <ScrollLink to="contact" smooth={true}>Contact</ScrollLink>
-      <a href="">
+      <a href="/home" style={{ pointerEvents: "none" }}>
         <BsCart2 className='navbar-cart-icon'/>
       </a>
       <button className='primary-button'>
